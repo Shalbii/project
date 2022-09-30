@@ -1,0 +1,30 @@
+.TasklistP_content_topbar {}
+
+.TasklistP_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.TasklistP_contentL {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.TasklistP_contentR {
+    display: flex;
+    flex-direction: column;
+}
+
+.TasklistP_content_titlebar {
+
+    margin-top: 10%;
+    margin-bottom: 30%;
+    margin-left: 2%;
+
+}
+
+.TasklistP_content_filterbar {
+    /* margin-bottom: 50%; */
+    margin-left: 12%;
+}

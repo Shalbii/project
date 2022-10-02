@@ -18,13 +18,16 @@
 
 .TasklistP_content_titlebar {
 
-    margin-top: 10%;
-    margin-bottom: 30%;
-    margin-left: 2%;
+    margin-top: 5%;
+    /* margin-bottom: 30%; */
+    margin-left: 18%;
 
 }
 
 .TasklistP_content_filterbar {
     /* margin-bottom: 50%; */
-    margin-left: 12%;
+    margin-left: 18%;
+}
+.TasklistP_content_mainlist{
+    margin-left: 18%;
 }

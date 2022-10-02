@@ -43,10 +43,10 @@ body{
 }
 .titlebar_top_col22 {
     background-color: #8833FF;
-    width: 8%;
+    width: 19%;
     display: flex;
     align-items: center;
-    padding: 7px 30px;
+    padding: 7px 20px;
     border-radius: 20px;
 }
 .titlebar_top_col21 label,
@@ -61,6 +61,14 @@ body{
 .titlebar_bagIcon,
 .titlebar_plusIcon{
     color: #C3CAD9;
+    
+   
+}
+.AT{
+  background-color: #8833FF;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
 }
 .titlebar_downloadIcon{
     color: rgb(113, 183, 183);
@@ -72,15 +80,16 @@ body{
   flex-direction: column;
  position: absolute;
   justify-content: center;
+  
 }
 .AddtaskPage{
     
-  background-color: blue;
-  height: 30vh;
+  /* background-color: blue; */
+  height: 10vh;
   justify-content: center;
   align-items: center;
-  width: 95vh;
-  margin-left: 60%;
+  width: 70vh;
+  margin-left: 10%;
   margin-top: 20%;
 }
 
@@ -88,15 +97,47 @@ body{
 justify-content: space-between;
 display: flex;
 padding: 10px;
-font-size: xx-large;
-
+padding-right: 90px;
 
 }
+
+.addtaskbold label{
+  font-size: 18px; 
+  padding-right: 100px;
+}
+.log {
+display: flex;
+padding-top: 40px;
+padding-right: 43px;
+font-size: 18px;
+}
+
+.email {
+  display: flex;
+  padding-top: 40px;
+  padding-right: 20px;
+  height: 0.5vh;
+text-decoration: underline;
+text-decoration-color: blueviolet;
+text-decoration-thickness:5px;
+font-size: 18px;
+
+  
+
+}
+
+/* .email ul{
+  background-color: aqua;
+  margin-top: 10px;
+  
+} */
 .r1_details button{
 
 background-color: blueviolet;
+border-color: #FFFFFF;
 border-radius: 18px;
-margin-left: 15px;
+margin-left: 6px;
+
 
 }
 .r1_bagSquare {
@@ -114,19 +155,27 @@ margin-bottom: 8px;
 width: 25px;
 }
 .r1_plusIcon{
-  margin-left: 10px;
+  margin-right: 3px;
  width: 15px;
   background-color: C3CAD9;
-  margin-top: 15px;
+  margin-top: 8px;
+  color: violet;
   
 }
 .r1_plus{
-  background-color: green;
+  background-color: blueviolet;
 flex-direction: row;
-width: 90px;
-border-radius: 10px;
-padding-top: 2px;
+width: 86px;
+height: 4vh;
+border-radius:12px;
+padding-top: 1px;
+padding-left: 10px;
+padding-bottom: 5px;
+margin-right: -25px;
+margin-top: 20px;
 }
+
+
 .label {
   color: rgba(75, 73, 73, 0.726);
  
@@ -136,6 +185,7 @@ padding-top: 2px;
   background-color: #FFFFFF;
   height: 30px;
   width: 150px;
+ margin-left: 3px;
 }
 .rectangle_1{
   background-color: #FFFFFF;
@@ -167,6 +217,8 @@ padding:25px 0px ;
 background-color: #FFFFFF;
 height: 30px;
 width: 150px;
+margin-left: 3px;
+
 }
 .rectangle_4{
 background-color: #FFFFFF;
@@ -180,7 +232,26 @@ width: 150px;
 margin-right: 20px;
 }
 .rowitems{
-  background-color: lightgrey;
-  height: 40vh;
-  margin-top: 90px;
+  background-color: #fafbfc;
+  height: 30vh;
+  margin-bottom: 100px;
+  padding: 15px;
+  
+}
+.full{
+
+  background-color:#fafbfc;
+  height: 50vh;
+}
+.S{
+background-color: white;
+  margin-top: 20px;
+  width: 50%;
+  border: 1px solid gray;
+  outline: none;
+}
+.button{
+  outline: none;
+  border: none;
+  color: white;
 }

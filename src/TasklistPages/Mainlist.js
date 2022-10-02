@@ -1,30 +1,35 @@
-import React from "react";
 import "./Mainlist.css";
+import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import {TiTick} from "react-icons/ti";
+import { useState } from "react";
 export default function Mainlist() {
+  const [show, setShow] = useState(false);
+  function HandleClick(){
+    setShow(!show);
+  }
   return (
     <>
-      <div>
-        <div className="box"></div>
-        <div className="header">
-          <div className="row1">
+      <div className="Mainlist_Outer">
+        <div className="Mainlist_box"></div>
+        <div className="Mainlist_header">
+          <div className="Mainlist_row1">
             <ul>
               <li>FirstName</li>
               <li>LastName</li>
               <li>Status</li>
-              <li>Created On</li>
+              <li>Created on </li>
               <li>Email</li>
               <li>Responses</li>
               <li>Owner</li>
             </ul>
           </div>
         </div>
-        <div className="Innerbox">
-          <div className="list">
-            <div className="list_row_top">
-              <div className="list_whitecircle"></div>
-              <div className="list_row">
+        <div className="Mainlist_Innerbox">
+          <div className="Mainlist_list">
+            <div className="Mainlist_list_row_top">
+              <input className="Cb" type="checkbox" onClick={HandleClick}/>
+              <label for="checkbox"></label>
+              <div className="Mainlist_list_row">
                 <label>John</label>
                 <label>Smith</label>
                 <label>Confirmed</label>
@@ -32,57 +37,48 @@ export default function Mainlist() {
                 <label>larrywilson@nomail.com</label>
                 <label>10</label>
                 <label>Larry wilson</label>
-                <div className="icon">
+                <div className="Mainlist_icon">
                   <AiOutlineArrowRight />
                 </div>
               </div>
             </div>
-            <ListRow/>
-            <ListRow/>
-            <ListRow/>
-            <ListRow/>
-            <div className="list_row7_top">
-              <div className="list_whitecircle7"><TiTick/></div>
-              <div className="list_row7">
-                <label>John</label>
-                <label>Smith</label>
-                <label>Confirmed</label>
-                <label>2022-02-01</label>
-                <label>larrywilson@nomail.com</label>
-                <label>10</label>
-                <label>Larry wilson</label>
-                <AiOutlineArrowRight />
-              </div>
+            <ListRow />
+            <ListRow />
+            <ListRow />
+            <ListRow />
+            <ListRow />
+            <ListRow />
+            <ListRow />
+            <ListRow />
+            <ListRow />
+            <div>
+              <button className="Mainlist_Button">load more leads</button>
             </div>
-            <ListRow/>
-            <ListRow/>
-            <ListRow/>
-            <ListRow/>
-            <div><button className="Button">load more leads</button></div>
+          </div>
+          </div>
+        </div>
+    </>
+  );
+}
+function ListRow() {
+  return (
+    <>
+      <div className="Mainlist_list_row_top">
+        <input className="Cb" type="checkbox"/>
+              <label for="checkbox"></label>
+        <div className="Mainlist_list_row">
+          <label>John</label>
+          <label>Smith</label>
+          <label>Confirmed</label>
+          <label>2022-02-01</label>
+          <label>larrywilson@nomail.com</label>
+          <label>10</label>
+          <label>Larry wilson</label>
+          <div className="Mainlist_icon">
+            <AiOutlineArrowRight />
           </div>
         </div>
       </div>
     </>
   );
-
- 
-}
-function ListRow(){
-  return(<>
-  <div className="list_row_top">
-            <div className="list_whitecircle"></div>
-            <div className="list_row">
-              <label>John</label>
-              <label>Smith</label>
-              <label>Confirmed</label>
-              <label>2022-02-01</label>
-              <label>larrywilson@nomail.com</label>
-              <label>10</label>
-              <label>Larry wilson</label>
-              <div className="icon">
-                <AiOutlineArrowRight />
-              </div>
-            </div>
-            </div>
-  </>)
 }
